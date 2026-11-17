@@ -9,7 +9,7 @@ isolation comparable to a virtual machine.
 ## Security notice
 This repository builds an **intentionally vulnerable** system for **security education and
 research only**. **Do not** expose it to the public internet, run it in production, or deploy
-it on any untrusted network. No access credentials, lab links, or secrets belong in this repo.
+it on any untrusted network.
 
 ## What this project does
 The SUASecLab runs each student's vulnerable machines as full **virtual machines (VMs)**, which
@@ -78,7 +78,7 @@ git push          # share your changes (end of session)
 
 ---
 
-## Status
+## Target for team
 - **Now → January:** working prototype on a laptop (container + measurements).
 - **January:** proof-of-concept presentation.
 - **January → March:** integration into the SUASecLab server + final measurements and report.
