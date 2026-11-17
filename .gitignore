@@ -1,0 +1,65 @@
+# SECRETS / CREDENTIALS
+.env
+*.env
+*.token
+*secret*
+*credential*
+lab-access*
+kali*.txt
+
+# SSH / TLS keys
+*.pem
+*.key
+*.crt
+*.pfx
+id_rsa*
+id_ed25519*
+
+# k3s / Kubernetes: kubeconfig
+kubeconfig
+*.kubeconfig
+k3s.yaml
+.kube/
+
+# VM / container images
+*.iso
+*.img
+*.qcow2
+*.vmdk
+*.vdi
+*.vhd
+*.vhdx
+*.raw
+*.ova
+*.box
+*.tar
+*.tar.gz
+*.tgz
+
+# Packer (baseline VM build)
+packer_cache/
+output-*/
+crash.log
+
+# Trivy cache
+.trivycache/
+
+# Python (scripts / measurements)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors / IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs / temp
+*.log
+tmp/
