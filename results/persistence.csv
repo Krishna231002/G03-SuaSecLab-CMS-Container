@@ -1,0 +1,8 @@
+
+date,test,expected,actual,result
+2026-11-27,Pod recreation,New pod created,New pod created,Pass
+2026-11-27,Persistent file,Retained,Retained,Pass
+2026-11-27,Temporary file,Removed,Removed,Pass
+2026-11-27,PVC retention,Unchanged,All four unchanged,Pass
+2026-11-27,MariaDB availability,Running,mysqld is alive,Pass
+2026-11-27,WordPress availability,HTTP response,HTTP 301,Pass

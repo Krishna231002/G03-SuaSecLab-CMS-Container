@@ -1,0 +1,9 @@
+
+date,test,expected,actual,result
+2026-11-27,Unauthorized pod to CMS HTTP,Blocked,Connection failed,Pass
+2026-11-27,Unauthorized pod to CMS HTTPS,Blocked,Connection failed,Pass
+2026-11-27,Unauthorized pod to CMS Service,Blocked,Connection failed,Pass
+2026-11-27,Authorized pod to CMS HTTP,Allowed,HTTP 301,Pass
+2026-11-27,CMS to external pod,Blocked,Output not recorded,Unverified
+2026-11-27,CMS to internet,Blocked,Output not recorded,Unverified
+2026-11-27,Access after allow policy removal,Blocked,Output not recorded,Unverified
