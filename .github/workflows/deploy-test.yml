@@ -1,0 +1,19 @@
+name: Deploy test (clean machine)
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  deploy-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Make the script executable
+        run: chmod +x deploy.sh
+
+      - name: Run the deploy script
+        run: bash deploy.sh
