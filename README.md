@@ -45,7 +45,7 @@ Four sub-questions:
 .
 ├── container/     # Dockerfile(s) for the CMS container
 ├── baseline-vm/   # notes / scripts for the existing lab VM baseline
-├── k8s/           # k3s / Kubernetes manifests
+├── k3s/           # k3s / Kubernetes manifests
 ├── hardening/     # seccomp profiles, dropped capabilities, network policies
 ├── scripts/       # deploy script, measurement scripts
 ├── results/       # measurement data (CSV) and charts
