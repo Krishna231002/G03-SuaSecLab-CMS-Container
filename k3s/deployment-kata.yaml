@@ -1,0 +1,49 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cms
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: cms
+  template:
+    metadata:
+      labels:
+        app: cms
+    spec:
+      automountServiceAccountToken: false
+      runtimeClassName: kata
+      containers:
+        - name: cms
+          image: docker.io/library/suasploitable-cms:integrated
+          imagePullPolicy: Never
+          command: ["/entrypoint-integrated.sh"]
+          ports:
+            - containerPort: 80
+            - containerPort: 443
+          volumeMounts:
+            - name: db
+              mountPath: /var/lib/mysql
+            - name: wp
+              mountPath: /srv/wp
+            - name: mail
+              mountPath: /var/mail
+            - name: tls
+              mountPath: /srv/certs
+      volumes:
+        - name: db
+          persistentVolumeClaim:
+            claimName: cms-db
+        - name: wp
+          persistentVolumeClaim:
+            claimName: cms-wp
+        - name: mail
+          persistentVolumeClaim:
+            claimName: cms-mail
+        - name: tls
+          persistentVolumeClaim:
+            claimName: cms-tls

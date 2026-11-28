@@ -1,0 +1,17 @@
+date,test,expected,actual,result
+2026-11-28,Kata system check,Supported,Supported,Pass
+2026-11-28,Runtime registration,Available,Available,Pass
+2026-11-28,Test pod,Running,Running,Pass
+2026-11-28,Guest kernel,Separate kernel,6.18.56,Pass
+2026-11-28,CMS pod,Running,Running,Pass
+2026-11-28,Apache,Running,Running,Pass
+2026-11-28,MariaDB,Running,mysqld is alive,Pass
+2026-11-28,Postfix,Running,Running,Pass
+2026-11-28,Dovecot,Running,Running,Pass
+2026-11-28,PVC retention,Four unchanged,Four unchanged,Pass
+2026-11-28,Pod HTTPS,HTTP response,HTTP 301,Pass
+2026-11-28,Service HTTPS,HTTP response,HTTP 301,Pass
+2026-11-28,WordPress homepage,HTTP 200,HTTP 200,Pass
+2026-11-28,WordPress title,SUASecLab Local Test,SUASecLab Local Test,Pass
+2026-11-28,Port forwarding,Connected,Connection refused,Fail
+2026-11-28,Attack paths,Equivalent,Not tested,Pending
