@@ -1,0 +1,4 @@
+date,test,seccomp,filters,no_new_privs,capabilities,result,notes
+2026-11-28,Default container,0,0,0,14,Pass,Baseline
+2026-11-28,Seccomp enabled,2,1,0,14,Pass,Kept
+2026-11-28,Privilege restriction,2,1,1,Not checked,Pass,Reverted
