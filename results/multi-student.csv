@@ -1,0 +1,14 @@
+date,test,expected,actual,result
+2026-11-28,Student namespaces,2,2,Pass
+2026-11-28,Running CMS pods,3,3,Pass
+2026-11-28,Student 01 database,Running,Running,Pass
+2026-11-28,Student 02 database,Running,Running,Pass
+2026-11-28,Student 01 HTTPS,HTTP response,HTTP 301,Pass
+2026-11-28,Student 02 HTTPS,HTTP response,HTTP 301,Pass
+2026-11-28,Student 01 to Student 02,Blocked,Connection failed,Pass
+2026-11-28,Student 02 to Student 01,Blocked,Connection failed,Pass
+2026-11-28,Student 01 to original CMS,Blocked,Connection failed,Pass
+2026-11-28,Student PVCs,8 separate volumes,8 separate volumes,Pass
+2026-11-28,File in Student 01,Exists,Exists,Pass
+2026-11-28,File in Student 02,Not found,Not found,Pass
+2026-11-28,File in original CMS,Not found,Not found,Pass

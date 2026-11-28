@@ -1,0 +1,3 @@
+date,runtime,cms_instances,total_ram_gib,used_ram_gib,available_ram_gib,swap_used_gib
+2026-11-28,kata,1,9.7,1.7,8.0,0
+2026-11-28,kata,3,9.7,2.6,7.1,0
